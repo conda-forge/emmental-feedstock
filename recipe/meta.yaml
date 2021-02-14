@@ -1,18 +1,18 @@
 {% set name = "emmental" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 24dfbb6b1429353e821453fff18ca11bb83de3503338cfc089c61e464132edfc
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0c4aab60435910c16632b92e37b88962122e4533256075b1efbcab5bb13cc282
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -45,10 +45,10 @@ about:
   home: https://github.com/SenWu/emmental
   license: MIT
   license_family: MIT
-  license_file: LICENSE 
-  summary: "A framework for building multi-modal multi-task learning systems."
+  license_file: LICENSE
+  summary: A framework for building multi-modal multi-task learning systems.
   doc_url: https://emmental.readthedocs.io/
-  dev_url: https://github.com/SenWu/emmental 
+  dev_url: https://github.com/SenWu/emmental
 
 extra:
   recipe-maintainers:
