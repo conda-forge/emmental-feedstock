@@ -5,11 +5,13 @@ Home: https://github.com/SenWu/emmental
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emmental-feedstock/blob/master/LICENSE.txt)
 
 Summary: A framework for building multi-modal multi-task learning systems.
 
+Development: https://github.com/SenWu/emmental
 
+Documentation: https://emmental.readthedocs.io/
 
 Current build status
 ====================
