@@ -1,5 +1,5 @@
 {% set name = "emmental" %}
-{% set version = "0.0.8" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c4aab60435910c16632b92e37b88962122e4533256075b1efbcab5bb13cc282
+  sha256: 81322da43d25b7a9a23ed5b93b9f43494e8d2ce2b32896ec78a7a0a1bc9eb12d
 
 build:
   noarch: python
